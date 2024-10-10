@@ -1,6 +1,7 @@
 # Genetic Algorithm Implementation and Analysis
 
-This repository contains a Python implementation of a Genetic Algorithm (GA) designed to solve optimization problems. The GA is enhanced with an analysis feature that evaluates various parameter combinations and saves the results in a JSON format for further inspection.
+This repository contains a Python implementation of a Genetic Algorithm (GA) designed to solve optimization problems. The GA is enhanced with an analysis feature that evaluates various parameter combinations and saves the results in JSON format for further inspection.
+If you want to get more information about the algorithm, please refer to the `algorithm.md` file.
 
 ## Features
 

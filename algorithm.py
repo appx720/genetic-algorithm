@@ -59,8 +59,8 @@ def confront(group, count):
     :param count: The number of elements to return
     :return: A list of elements after confrontation
     """
-    group = mate(group)
-    n_group = random.sample(group, count)
+    group = mate(group) # mate first
+    n_group = random.sample(group, count) # select elements
     return n_group
 
 

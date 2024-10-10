@@ -15,18 +15,18 @@ def analyze_algorithm(bit_size_range, group_size_range, superior_size_range, ror
     and the ratio of 1 bits to the total bits.
 
     Parameters:
-        bit_size_range (tuple of int): The range of bit size to try. The tuple
+        bit_size_range (list of int): The range of bit size to try. The list
             should contain three elements: the start value, the end value, and
             the step value.
-        group_size_range (tuple of int): The range of group size to try.
-        superior_size_range (tuple of int): The range of superior size to try.
-        rorate_range (tuple of int): The range of rorate to try.
+        group_size_range (list of int): The range of group size to try.
+        superior_size_range (list of int): The range of superior size to try.
+        rorate_range (list of int): The range of rorate to try.
         num_cases (int): The number of times to run the algorithm for each
             combination of parameters. Defaults to 100.
     """
     results = []
 
-    # 모든 매개변수 조합 생성
+    # generate all possible combinations
     param_combinations = itertools.product(
         range(bit_size_range[0], bit_size_range[1] + 1, bit_size_range[2]),
         range(group_size_range[0], group_size_range[1] + 1, group_size_range[2]),
@@ -57,6 +57,8 @@ def analyze_algorithm(bit_size_range, group_size_range, superior_size_range, ror
             "rorate": rorate,
             "ones_ratio": ratio
         })
+
+    results = {results: 'result'} # easy to seperate
 
 
     if os.path.exists('analysis.json'):
