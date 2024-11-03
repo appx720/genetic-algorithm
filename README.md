@@ -41,11 +41,6 @@ If you want to get more information about the algorithm, please refer to the `al
 
 - You can modify the parameters for both the algorithm and analysis directly in the respective Python files (`algorithm.py` and `analyze.py`) to suit your testing needs.
 
-## Requirements
-
-- Python 3.x
-- Any necessary libraries (if applicable) can be listed here.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
